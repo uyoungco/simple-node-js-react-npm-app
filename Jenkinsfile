@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        git(url: 'https://ghproxy.fsofso.com/https://github.com/uyoungco/simple-node-js-react-npm-app.git', changelog: true)
         sh '''pwd &&
 ls &&
 npm -v &&
